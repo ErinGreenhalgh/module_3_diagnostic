@@ -1,4 +1,5 @@
 class CloseStation
+  attr_reader :name, :address, :city, :fuel_type, :distance, :access_time
 
   def initialize(station_data)
     @name             = station_data[:station_name]
