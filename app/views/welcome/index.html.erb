@@ -1,0 +1,5 @@
+<%= form_for :search, search_close_stations, :method => 'get' do |f| %>
+  <%= f.input :zipcode%>
+  <%= f.text_field :zipcode %>
+  <%= f.submit "Locate" %>
+<% end  %>
