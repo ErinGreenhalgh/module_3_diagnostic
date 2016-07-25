@@ -1,4 +1,4 @@
-class CloseStations
+class CloseStation
 
   def initialize(station_data)
     @name             = station_data[:station_name]
@@ -12,7 +12,7 @@ class CloseStations
   def self.all_stations(zipcode)
     response = FuelService.new.get_close_stations(zipcode)
     response[:fuel_stations].map do |station_data|
-      CloseStations.new(station_data)
+      CloseStation.new(station_data)
     end
   end
 

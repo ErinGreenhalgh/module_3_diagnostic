@@ -1,0 +1,13 @@
+<h1>Close Fueling Stations to Your Zipcode</h1>
+<ul>
+  <li>
+  <% @stations.each do |station| %>
+    Station Name:<%= station.name %> <br>
+    Station Address:<%= station.address %> <br>
+    Station City: <%= station.city %> <br>
+    Station Fuel Type: <%= station.fuel_type %> <br>
+    Station Distance: <%= station.distance %> <br>
+    Station Access Time: <%= station.access_time %> <br>
+  <% end  %>
+  </li>
+</ul>
